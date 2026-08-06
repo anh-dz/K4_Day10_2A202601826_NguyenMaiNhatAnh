@@ -1,0 +1,9 @@
+{
+  "report_name": "baseline",
+  "total_rows": 24,
+  "not_null_id": 24,
+  "unique_id": 24,
+  "not_null_title": 24,
+  "valid_summary_len": 24,
+  "passed": true
+}

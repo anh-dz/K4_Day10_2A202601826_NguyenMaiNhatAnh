@@ -1,0 +1,45 @@
+{
+  "report_name": "repaired",
+  "total_rows": 24,
+  "checks": [
+    {
+      "check": "row_count",
+      "description": "Dataset has at least 1 row",
+      "passed": true,
+      "detail": "Total rows: 24"
+    },
+    {
+      "check": "paper_id_not_null_unique",
+      "description": "paper_id is not null and unique",
+      "passed": true,
+      "detail": "Null IDs: 0, Unique IDs: 24/24"
+    },
+    {
+      "check": "title_not_null",
+      "description": "All titles are non-empty",
+      "passed": true,
+      "detail": "Null titles: 0, Empty titles: 0"
+    },
+    {
+      "check": "summary_length",
+      "description": "All summaries have at least 20 characters",
+      "passed": true,
+      "detail": "Short summaries (<20 chars): 0, Empty summaries: 0"
+    },
+    {
+      "check": "freshness",
+      "description": "All records within 180 days freshness threshold",
+      "passed": true,
+      "detail": "Stale rows (>180 days): 0/24"
+    },
+    {
+      "check": "no_duplicates",
+      "description": "No duplicate paper_ids",
+      "passed": true,
+      "detail": "Duplicate rows: 0"
+    }
+  ],
+  "overall_status": "PASS",
+  "passed_count": 6,
+  "failed_count": 0
+}

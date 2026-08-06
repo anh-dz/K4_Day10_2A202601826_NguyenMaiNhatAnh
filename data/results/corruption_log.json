@@ -1,0 +1,57 @@
+[
+  {
+    "type": "drop_latest",
+    "description": "Dropped 2 latest records",
+    "affected_ids": [
+      "10.2118/234689-pa",
+      "10.1007/s10278-026-02086-9"
+    ],
+    "count": 2
+  },
+  {
+    "type": "blank_summary",
+    "description": "Blanked summary on 2 rows",
+    "affected_ids": [
+      "10.35314/3y9hy151",
+      "10.21079/11681/50309"
+    ],
+    "count": 2
+  },
+  {
+    "type": "noise_injection",
+    "description": "Injected noise into 2 summaries",
+    "affected_ids": [
+      "10.21203/rs.3.rs-10178277/v1",
+      "10.52060/juptik.v4i1.4318"
+    ],
+    "count": 2
+  },
+  {
+    "type": "truncate_title",
+    "description": "Truncated 2 titles to 10 chars",
+    "affected_ids": [
+      "10.21203/rs.3.rs-10012178/v1",
+      "10.63646/kpqm1958"
+    ],
+    "count": 2
+  },
+  {
+    "type": "stale_dates",
+    "description": "Set 3 records to stale publication date (2020-01-01)",
+    "affected_ids": [
+      "10.21079/11681/50309",
+      "10.20944/preprints202602.0996.v1",
+      "10.70121/001c.158711"
+    ],
+    "count": 3
+  },
+  {
+    "type": "duplicates",
+    "description": "Added 2 duplicate rows",
+    "affected_ids": [
+      "10.3390/buildings16132637",
+      "10.36227/techrxiv.177272838.89432844/v1"
+    ],
+    "count": 2
+  }
+]

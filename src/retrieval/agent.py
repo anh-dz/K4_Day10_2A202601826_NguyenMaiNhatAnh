@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import logging
 from typing import Any
 
 from langchain.agents import create_agent
@@ -9,8 +10,12 @@ from core.config import Settings
 from retrieval.index import LocalEmbeddingIndex
 from retrieval.llm import build_llm
 
+logger = logging.getLogger(__name__)
+
 
 def build_agent(settings: Settings, index: LocalEmbeddingIndex):
+    """Build a tool-calling agent with semantic search and lookup tools."""
+
     @tool
     def semantic_search_papers(query: str, top_k: int = 4) -> str:
         """Search the local paper corpus with embeddings and return the most relevant papers."""
@@ -23,7 +28,7 @@ def build_agent(settings: Settings, index: LocalEmbeddingIndex):
                 f"score: {result.score:.4f}\n"
                 f"{result.content}"
             )
-        return "\n\n".join(lines)
+        return "\n\n".join(lines) if lines else "No papers found."
 
     @tool
     def lookup_paper(paper_id_or_title: str) -> str:
@@ -51,9 +56,14 @@ def build_agent(settings: Settings, index: LocalEmbeddingIndex):
 
 
 def run_agent_question(agent: Any, question: str) -> str:
-    result = agent.invoke({"messages": [{"role": "user", "content": question}]})
-    messages = result.get("messages", [])
-    if not messages:
-        return ""
-    final_message = messages[-1]
-    return getattr(final_message, "content", str(final_message))
+    """Run a question through the agent and return the final answer."""
+    try:
+        result = agent.invoke({"messages": [{"role": "user", "content": question}]})
+        messages = result.get("messages", [])
+        if not messages:
+            return ""
+        final_message = messages[-1]
+        return getattr(final_message, "content", str(final_message))
+    except Exception as exc:
+        logger.warning("Agent error for question '%s': %s", question, exc)
+        return f"Agent error: {exc}"

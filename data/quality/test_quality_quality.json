@@ -1,0 +1,9 @@
+{
+  "report_name": "test_quality",
+  "total_rows": 1,
+  "not_null_id": 1,
+  "unique_id": 1,
+  "not_null_title": 1,
+  "valid_summary_len": 1,
+  "passed": true
+}

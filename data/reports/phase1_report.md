@@ -11,7 +11,7 @@
 - Retrieval Hit Rate: 100.00%
 - Mean Token F1: 0.3137
 - Judge Accuracy: 25.00%
-- Mean Judge Score: 2.10
+- Mean Judge Score: 2.00
 
 ## Data Quality
 - Passed: True

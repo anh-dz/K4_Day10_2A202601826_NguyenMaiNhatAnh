@@ -23,9 +23,9 @@
     "retrieval_hit": true,
     "token_f1": 0.3116883116883117,
     "judge": {
-      "score": 1,
+      "score": 2,
       "correct": false,
-      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
+      "reasoning": "The model answer only provides a very brief introductory statement about the context of using LLMs for safety reports. It fails to summarize the core contribution of the paper\u2014the SafeRAG framework, its multistage retrieval mechanism, or its evaluation results\u2014which are essential parts of a main summary."
     }
   },
   {
@@ -54,7 +54,7 @@
     "judge": {
       "score": 1,
       "correct": false,
-      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
+      "reasoning": "The model answer provides a summary of the paper's context and importance rather than listing the authors as requested by the question."
     }
   },
   {
@@ -83,7 +83,7 @@
     "judge": {
       "score": 5,
       "correct": true,
-      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
+      "reasoning": "The model answer exactly matches the reference answer."
     }
   },
   {
@@ -110,9 +110,9 @@
     "retrieval_hit": true,
     "token_f1": 0.0,
     "judge": {
-      "score": 1,
-      "correct": false,
-      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
+      "score": 4,
+      "correct": true,
+      "reasoning": "The model answer provides a strong summary of the paper's subject matter (LLMs for safety report generation in high-risk industries), which is materially correct. However, it answers 'What is this about?' rather than listing distinct 'categories or subjects' as explicitly requested by the question."
     }
   },
   {
@@ -139,9 +139,9 @@
     "retrieval_hit": true,
     "token_f1": 0.23280423280423285,
     "judge": {
-      "score": 1,
+      "score": 2,
       "correct": false,
-      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
+      "reasoning": "The model answer only provides the opening sentence describing the problem in jawbone lesion diagnosis. It fails to summarize the core elements of the paper, such as the proposed JADE-Plus framework, its multimodal components (VLM, RAG), the evaluation methodology, or the key quantitative results."
     }
   },
   {
@@ -170,7 +170,7 @@
     "judge": {
       "score": 1,
       "correct": false,
-      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
+      "reasoning": "The question asks for the names of the authors. The model answer provided an abstract snippet describing the difficulty of diagnosing jawbone lesions, which is irrelevant to listing the authors."
     }
   },
   {
@@ -199,7 +199,7 @@
     "judge": {
       "score": 5,
       "correct": true,
-      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
+      "reasoning": "The model answer exactly matches the reference answer."
     }
   },
   {
@@ -226,9 +226,9 @@
     "retrieval_hit": true,
     "token_f1": 0.0,
     "judge": {
-      "score": 1,
+      "score": 2,
       "correct": false,
-      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
+      "reasoning": "The model answer provides a descriptive abstract summarizing the challenge of diagnosing jawbone lesions, but it fails to list the specific 'categories or subjects' as explicitly requested by the question."
     }
   },
   {
@@ -255,9 +255,9 @@
     "retrieval_hit": true,
     "token_f1": 0.3188405797101449,
     "judge": {
-      "score": 1,
+      "score": 3,
       "correct": false,
-      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
+      "reasoning": "The model answer correctly quotes the opening premise and research gap of the paper. However, a 'main summary' must encapsulate the methodology (CM-RAF-Lag-Llama), the key findings (significant MSE reductions in multiple configurations), and the conclusion regarding retrieval's utility. The provided answer is only the introductory sentence and lacks any substantive summary of the results."
     }
   },
   {
@@ -286,7 +286,7 @@
     "judge": {
       "score": 1,
       "correct": false,
-      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
+      "reasoning": "The model answer provides an abstract or summary text related to the paper's topic, instead of listing the authors as requested by the question."
     }
   },
   {
@@ -315,7 +315,7 @@
     "judge": {
       "score": 5,
       "correct": true,
-      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
+      "reasoning": "The model answer exactly matches the reference answer."
     }
   },
   {
@@ -342,9 +342,9 @@
     "retrieval_hit": true,
     "token_f1": 0.0,
     "judge": {
-      "score": 1,
+      "score": 3,
       "correct": false,
-      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
+      "reasoning": "The model answer provides a descriptive summary or an abstract statement about the research gap rather than listing distinct categories or subjects as requested by the question."
     }
   },
   {
@@ -371,9 +371,9 @@
     "retrieval_hit": true,
     "token_f1": 0.23958333333333334,
     "judge": {
-      "score": 1,
+      "score": 2,
       "correct": false,
-      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
+      "reasoning": "The model answer is factually correct regarding the background of the paper but provides only a very small excerpt. It fails to summarize the main findings (Results and Conclusions) which are essential for answering 'What is the main summary?'"
     }
   },
   {
@@ -402,7 +402,7 @@
     "judge": {
       "score": 1,
       "correct": false,
-      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
+      "reasoning": "The model answer provides background information related to the topic but completely fails to answer the question, which asks for the authors of a specific paper."
     }
   },
   {
@@ -431,7 +431,7 @@
     "judge": {
       "score": 5,
       "correct": true,
-      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
+      "reasoning": "The model answer exactly matches the reference answer."
     }
   },
   {
@@ -458,9 +458,9 @@
     "retrieval_hit": true,
     "token_f1": 0.0,
     "judge": {
-      "score": 1,
+      "score": 2,
       "correct": false,
-      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
+      "reasoning": "The model answer provides a descriptive summary of the paper's background context rather than listing the specific categories or subjects as requested by the question."
     }
   },
   {
@@ -489,7 +489,7 @@
     "judge": {
       "score": 1,
       "correct": false,
-      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
+      "reasoning": "The model answer only provides the introductory problem statement from the reference text. A 'main summary' must cover the proposed solution (the agentic AI framework), the methodology used (CV and LLMs), and the key findings/conclusion of the paper, none of which are included here."
     }
   },
   {
@@ -518,7 +518,7 @@
     "judge": {
       "score": 1,
       "correct": false,
-      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
+      "reasoning": "The model answer provides a general statement about design review challenges instead of listing the authors as requested by the question."
     }
   },
   {
@@ -547,7 +547,7 @@
     "judge": {
       "score": 5,
       "correct": true,
-      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
+      "reasoning": "The model answer exactly matches the reference answer."
     }
   },
   {
@@ -574,9 +574,9 @@
     "retrieval_hit": true,
     "token_f1": 0.0,
     "judge": {
-      "score": 1,
+      "score": 2,
       "correct": false,
-      "reasoning": "Fallback heuristic judge used because the LLM evaluator was unavailable."
+      "reasoning": "The model answer provides a general problem statement or context for the paper's application area, but it does not list the specific 'categories or subjects' as requested by the question."
     }
   }
 ]

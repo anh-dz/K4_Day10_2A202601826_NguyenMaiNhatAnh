@@ -75,10 +75,14 @@ def build_llm(settings: Settings, temperature: float = 0.0):
             temperature=temperature,
         )
     if provider == "custom":
+        base_url = settings.custom_llm_base_url
+        if base_url and not base_url.endswith("/v1"):
+            base_url = base_url.rstrip("/") + "/v1"
+            
         return ChatOpenAI(
             model=settings.model_name,
             api_key=settings.custom_llm_api_key or "unused",
-            base_url=settings.custom_llm_base_url,
+            base_url=base_url,
             temperature=temperature,
         )
     raise RuntimeError(f"Unsupported LLM provider: {settings.llm_provider}")

@@ -110,8 +110,7 @@ def evaluate_pipeline(
     test_set = read_json(test_set_path)
     answers: list[dict[str, Any]] = []
 
-    for i, item in enumerate(test_set, 1):
-        print(f"  -> Evaluating question {i}/{len(test_set)}...", end=" ", flush=True)
+    for item in test_set:
         result = answer_question(item["question"], settings=settings, index=index)
         judge = _judge_answer(settings, item["question"], item["ground_truth"], result.answer)
         retrieval_hit = any(doc_id in item["ground_truth_doc_ids"] for doc_id in result.retrieved_doc_ids)
@@ -130,7 +129,6 @@ def evaluate_pipeline(
                 "judge": judge.model_dump(),
             }
         )
-        print("OK!")
 
     summary = {
         "samples": len(answers),
